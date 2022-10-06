@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+        background-color: black;
+        width: 100%;
+        height: 96px;
+        display: flex;
+        justify-content: space-between;
+}
+.pesquisa{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+.pesquisa input{
+    padding: 12px;
+    width: 545px;
+    border-radius: 50px;
+}
+
+.pesquisa img{
+    margin-left: -50px;
+    width: 25px;
+    
+}
+nav{
+    display: flex;
+}
+
+nav ul{
+    height: 40px;
+    display: flex;
+    list-style: none;
+    color: #fff
+}
+nav ul li a{
+    
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    
+}
+nav ul li{
+    font-size: 17px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #EC6C30;
+    margin: 0 10px;
+    padding: 12px 15px;
+    text-align: center;
+
+}
+nav ul li:hover{
+    background-color: #a27491;
+}
+.nav2{
+    display: none;
+}
+.slider{
+    background: url(./images/dragao.webp);
+    width: 100%;
+    height: 465px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+   
+}
+.box{
+    background-color: #fff;
+    width: 370px;
+    height: 210px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 100px;    
+}
+
+.box p {
+    margin: 20px 0;
+    text-align: center;
+    line-height: 26px;
+    font-size: 21px;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cabecalho img{
+    border-radius: 10px;
+}
+.titulo{
+    flex: 1;
+    text-align: center;
+}
+
+.titulo p{
+    line-height: inherit;
+    margin: 0;
+
+}
+.titulo h1{
+    color: rgb(247, 125, 11);
+}
+.jogos{
+    
+    justify-content: space-between;
+     padding: 30px;
+       
+     display: flex; 
+ }
+.jogo{
+    background-color: black;
+    border-radius: 10px;
+    width: 250px;
+    height: 380px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+       
+}
+
+.jogo a{
+    text-decoration: none;
+}
+.jogo a:hover{
+-webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+.jogo h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.jogo img{
+    width: 70%;
+    margin-bottom: 20px;
+}
+.jogo2{
+    background-color: rgb(223, 127, 39);
+    
+    text-align: center;     
+}
+.jogo3{
+    background-color: black;
+    
+}
+.jogo4{
+    background-color: rgb(223, 127, 39);
+    
+}
+.jogo5{
+    background-color: rgb(0, 0, 0);
+    
+}
+.bg_laranja{
+    background-color: rgb(223, 127, 39);
+}
+/* midia */
+@media  screen and (max-width: 400px) {
+    nav{
+        display: none;
+    }
+    .details ul li a:hover{
+        background-color: #a27491;
+    }
+    header{
+        padding: 20px;
+        width: inherit;
+        
+        height: 28px;
+    }
+    .pesquisa input{
+        padding: 5px;
+        width: 161px;
+        border-radius: 50px;
+    }
+    .pesquisa img{
+        margin-left: -22px;
+        width: 13px;
+        
+    }
+    .nav2 ul{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+
+    }
+    .nav2 a{
+        color:rgb(0, 0, 0);
+        text-decoration: none;
+
+    }
+    .nav2 ul li{
+    list-style: none;
+    border-radius: 2px;
+    background-color: #c4c4c4;
+    padding: 12px 15px;
+    text-align: center;
+    }
+    .nav2{
+        justify-content: center;
+        display: flex;
+    }
+    .slider{
+        background: url(./images/teste3.png);
+        /* background: ; */
+        width: 100%;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box{
+    background-color: #fff;
+    width: 65vw;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 0;    
+    }
+    .box p {
+    margin: 20px 0;
+    text-align: center;
+    line-height: 26px;
+    font-size: 15px;
+    }
+    .cabecalho{
+    display: flex;
+    justify-content: space-between;
+    }
+    .cabecalho img{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    .titulo{
+        flex: 1;
+        text-align: center;
+    }
+
+    .titulo p{
+        line-height: inherit;
+        margin: 0;
+
+    }
+    .titulo h1{
+        color: rgb(247, 125, 11);
+        width: 200px;
+        height: 45px;
+    }
+    .jogo img{
+        margin-bottom: -30px;
+    }
+    
+   
+    }

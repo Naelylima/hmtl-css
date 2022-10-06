@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayG Responsivo</title>
+    <link rel="stylesheet" href="style2.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 400px;
+      padding: 50px 0;
+    }
+
+    .swiper-slide {
+      padding: 20px;
+      text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: inherit;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (max-width:480px) {
+      .swiper-slide{
+        padding: 0;
+      }
+      
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo.png" alt="">
+        <div class="pesquisa">
+
+            <input type="text" placeholder="O que você quer jogar? " />
+            <a href="#">
+                <img src="./images/lupa.png" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+<!-- Parte escondida dos menus -->
+
+    <div class="nav2">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+
+
+    
+     <!-- Dragão -->
+     <div class="slider">
+        <div class="box">
+            <div class="cabecalho">
+                <img src="./images/castelo.emoji.webp" alt="castelo">
+                <div class="titulo">
+                    <h1>Jump On</h1>
+                    <p>Aventura</p>
+                </div>
+            </div>
+        
+        <p>Um jogo para se aventurar, treine e aprenda a sobreviver em meio as dificuldades.</p>
+        </div>
+    </div>
+
+    <!-- criar div fundo --> 
+     <!-- <div class="jogos">
+        <div class="jogo">
+            <a href="#
+            "><img src="./images/meninaFic.webp" alt="">
+            <h1>Jogo 1</h1></a>
+        </div>    
+    </div>  -->
+
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="jogo">
+                <a href="#"><img src="./images/meninaFic.webp" alt="">
+                <h1>Jogo 1</h1></a>
+            </div>   
+          </div>
+
+          <div class="swiper-slide"><div class="jogo bg_laranja">
+            <a href="#"><img src="./images/fantasma.webp" alt="">
+                <h1>Jogo 2</h1></a>
+        </div>
+    </div>
+
+          <div class="swiper-slide"><div class="jogo">
+            <a href=""><img src="./images/robo.webp" alt="">
+             <h1>Jogo 3</h1>
+            </a>
+           
+       </div>
+    </div>
+
+          <div class="swiper-slide"><div class="jogo bg_laranja">
+            <a href="#"><img src="./images/mario.png" alt="">
+                <h1>Jogo 4</h1>
+              </a>
+
+        </div>
+    </div>
+
+          <div class="swiper-slide"><div class="jogo">
+            <a href="#"><img src="./images/fogo e agua.png" alt="">
+            <h1>Jogo 5</h1>
+          </a>
+            
+        </div></div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+       
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          breakpoints: {
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+        },
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+    
+    
+</body>
+</html>
